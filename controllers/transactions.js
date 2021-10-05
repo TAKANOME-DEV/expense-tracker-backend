@@ -11,7 +11,7 @@ exports.getTransactions = async (req, res, next) => {
     );
     return transactions;
   } catch (err) {
-    res.status(400).json("Something Went Wrong");
+    res.status(400).json("Ops !! Something Went Wrong");
     console.error(err);
   }
 };
