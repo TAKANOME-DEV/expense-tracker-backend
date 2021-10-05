@@ -5,22 +5,14 @@
 - Express - NodeJS
 - PostgreSQL
 
-### Run
+### Install Dependencies
 
 - `npm install`
-- `cd client`
-  - `npm install`
 
-## Scripts
+### Run nodemon server
 
-### Frontend
+- `npm run server`
 
-`npm run client`
+### Run node server
 
-### Backend
-
-`npm run server`
-
-### Front and Backend
-
-`npm run dev`
+- `npm run start`
