@@ -1,8 +1,8 @@
 {
-  "name": "expense-tracker-server",
+  "name": "expense-tracker-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Expense Tracker Backend",
+  "main": "server.js",
   "scripts": {
     "start": "node server",
     "server": "nodemon server"
