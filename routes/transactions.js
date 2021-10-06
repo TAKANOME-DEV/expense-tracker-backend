@@ -1,13 +1,17 @@
 const express = require("express");
+const cors = require("cors");
 const router = express.Router();
 const {
-	getTransactions,
-	addTransaction,
-	deleteTransaction,
+  getTransactions,
+  addTransaction,
+  deleteTransaction,
 } = require("../controllers/transactions");
 
-router.route("/transactions").get(getTransactions).post(addTransaction);
+router
+  .route("/transactions")
+  .get(cors(), getTransactions)
+  .post(cors(), addTransaction);
 
-router.route("/transactions/:id").delete(deleteTransaction);
+router.route("/transactions/:id").delete(cors(), deleteTransaction);
 
 module.exports = router;
