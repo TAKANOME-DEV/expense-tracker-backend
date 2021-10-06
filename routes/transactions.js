@@ -8,10 +8,10 @@ const {
 } = require("../controllers/transactions");
 
 const options = {
-  origin: true,
-  methods: ["POST", "GET", "DELETE"],
-  credentials: true,
-  maxAge: 3600,
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
 };
 
 router
