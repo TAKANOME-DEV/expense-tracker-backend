@@ -7,24 +7,18 @@ const {
   deleteTransaction,
 } = require("../controllers/transactions");
 
-const allowlist = ["https://expense-tracker-frontend.netlify.app/"];
-const corsOptionsDelegate = (req, callback) => {
-  let corsOptions;
-  if (allowlist.indexOf(req.header("Origin")) !== -1) {
-    corsOptions = { origin: true }; // reflect (enable) the requested origin in the CORS response
-  } else {
-    corsOptions = { origin: false }; // disable CORS for this request
-  }
-  callback(null, corsOptions); // callback expects two parameters: error and options
+const options = {
+  origin: true,
+  methods: ["POST", "GET", "DELETE"],
+  credentials: true,
+  maxAge: 3600,
 };
 
 router
   .route("/transactions")
-  .get(cors(corsOptionsDelegate), getTransactions)
-  .post(cors(corsOptionsDelegate), addTransaction);
+  .get(cors(options), getTransactions)
+  .post(cors(options), addTransaction);
 
-router
-  .route("/transactions/:id")
-  .delete(cors(corsOptionsDelegate), deleteTransaction);
+router.route("/transactions/:id").delete(cors(options), deleteTransaction);
 
 module.exports = router;
