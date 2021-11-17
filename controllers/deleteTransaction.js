@@ -1,4 +1,5 @@
 const db = require("../db");
+
 // @desc DELETE Transaction
 // @route DELETE /transactions/:id
 // @access Public

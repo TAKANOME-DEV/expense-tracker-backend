@@ -1,4 +1,5 @@
 const db = require("../db");
+
 // @desc GET All Transactions
 // @route GET /transactions
 // @access Public
