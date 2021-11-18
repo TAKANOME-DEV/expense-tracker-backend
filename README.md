@@ -1,7 +1,9 @@
+# View Frontend: [Expense Tracker Fronted](https://github.com/TAKANOME-DEV/expense-tracker-frontend)
 
-## Frontend: https://github.com/TAKANOME-DEV/expense-tracker-frontend
+# Expense Tracker Backend
 
-## Expense Tracker Backend
-
-- Express - NodeJS
-- PostgreSQL
+> NodeJS
+>
+> Express
+>
+> PostgreSQL
