@@ -1,8 +1,10 @@
 const db = require("../db");
 
-// @desc ADD Transaction
-// @route POST /transactions
-// @access Public
+/**
+ * @desc ADD Transaction
+ * @route POST /transactions
+ * @access Public
+ */
 
 exports.handleAddTransaction = async (req, res) => {
   try {
