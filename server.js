@@ -18,7 +18,6 @@ const allowlist = [
 ];
 const corsOptions = {
   origin: function (origin, callback) {
-    console.log(origin);
     const isAllowList = allowlist.indexOf(origin) !== -1;
     if (isAllowList) {
       callback(null, true);
