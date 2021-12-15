@@ -8,14 +8,9 @@ const deleteTransaction = require("./routes/deleteTransaction");
 
 const app = express();
 
-const PORT = process.env.PORT;
-
 app.use(express.json());
 
-const allowlist = [
-  "https://takanome-expense-tracker.netlify.app",
-  process.env.LOCAL_CORS,
-];
+const allowlist = [process.env.PROD_ENDPOINT, process.env.LOCAL_CORS];
 const corsOptions = {
   origin: function (origin, callback) {
     const isAllowList = allowlist.indexOf(origin) !== -1;
@@ -34,8 +29,8 @@ app.use(addTransaction);
 app.use(deleteTransaction);
 
 app.listen(
-  PORT,
+  process.env.PORT,
   console.log(
-    `Server is running in ${process.env.NODE_ENV} mode at port ${PORT}`
+    `Server is running in ${process.env.NODE_ENV} mode at port ${process.env.PORT}`
   )
 );
