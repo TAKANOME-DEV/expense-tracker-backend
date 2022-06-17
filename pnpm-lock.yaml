@@ -5,7 +5,7 @@ specifiers:
   '@commitlint/config-conventional': 16.0.0
   '@types/node': '*'
   cors: ^2.8.5
-  dotenv: ^10.0.0
+  dotenv: ^16.0.0
   express: ^4.17.1
   helmet: ^5.0.1
   husky: ^7.0.4
@@ -15,7 +15,7 @@ specifiers:
 
 dependencies:
   cors: 2.8.5
-  dotenv: 10.0.0
+  dotenv: 16.0.1
   express: 4.17.2
   helmet: 5.0.1
   knex: 2.1.0_pg@8.7.1
@@ -773,9 +773,9 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /dotenv/10.0.0:
-    resolution: {integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==}
-    engines: {node: '>=10'}
+  /dotenv/16.0.1:
+    resolution: {integrity: sha512-1K6hR6wtk2FviQ4kEiSjFiH5rpzEVi8WW0x96aztHVMhEspNpc4DVOUTEHtEva5VThQ8IaBX1Pe4gSzpVVUsKQ==}
+    engines: {node: '>=12'}
     dev: false
 
   /duplexer3/0.1.4:
