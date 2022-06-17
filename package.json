@@ -22,7 +22,7 @@
     "@commitlint/config-conventional": "17.0.2",
     "@types/node": "*",
     "husky": "8.0.1",
-    "nodemon": "^2.0.14"
+    "nodemon": "2.0.16"
   },
   "peerDependencies": {
     "@types/node": "*"
